@@ -423,6 +423,46 @@ resources:
   state: free
   type: aws-outpost-quota-slice
 - names:
+  - us-west-2--aws-perf-qe-quota-slice-0
+  - us-west-2--aws-perf-qe-quota-slice-1
+  - us-west-2--aws-perf-qe-quota-slice-2
+  state: free
+  type: aws-perf-qe-quota-slice
+- names:
+  - us-west-2--aws-perfscale-lrc-qe-quota-slice-0
+  - us-west-2--aws-perfscale-lrc-qe-quota-slice-1
+  - us-west-2--aws-perfscale-lrc-qe-quota-slice-2
+  - us-west-2--aws-perfscale-lrc-qe-quota-slice-3
+  - us-west-2--aws-perfscale-lrc-qe-quota-slice-4
+  state: free
+  type: aws-perfscale-lrc-qe-quota-slice
+- names:
+  - us-west-2--aws-perfscale-qe-quota-slice-0
+  - us-west-2--aws-perfscale-qe-quota-slice-1
+  - us-west-2--aws-perfscale-qe-quota-slice-2
+  - us-west-2--aws-perfscale-qe-quota-slice-3
+  - us-west-2--aws-perfscale-qe-quota-slice-4
+  - us-west-2--aws-perfscale-qe-quota-slice-5
+  - us-west-2--aws-perfscale-qe-quota-slice-6
+  - us-west-2--aws-perfscale-qe-quota-slice-7
+  - us-west-2--aws-perfscale-qe-quota-slice-8
+  - us-west-2--aws-perfscale-qe-quota-slice-9
+  state: free
+  type: aws-perfscale-qe-quota-slice
+- names:
+  - us-west-2--aws-perfscale-quota-slice-0
+  - us-west-2--aws-perfscale-quota-slice-1
+  - us-west-2--aws-perfscale-quota-slice-2
+  - us-west-2--aws-perfscale-quota-slice-3
+  - us-west-2--aws-perfscale-quota-slice-4
+  - us-west-2--aws-perfscale-quota-slice-5
+  - us-west-2--aws-perfscale-quota-slice-6
+  - us-west-2--aws-perfscale-quota-slice-7
+  - us-west-2--aws-perfscale-quota-slice-8
+  - us-west-2--aws-perfscale-quota-slice-9
+  state: free
+  type: aws-perfscale-quota-slice
+- names:
   - ap-northeast-1--aws-qe-quota-slice-0
   - ap-northeast-1--aws-qe-quota-slice-1
   - ap-northeast-1--aws-qe-quota-slice-2
@@ -448,11 +488,11 @@ resources:
   - us-east-1--aws-qe-quota-slice-17
   - us-east-1--aws-qe-quota-slice-18
   - us-east-1--aws-qe-quota-slice-19
-  - us-east-2--aws-qe-quota-slice-0
-  - us-east-2--aws-qe-quota-slice-1
-  - us-east-2--aws-qe-quota-slice-2
-  - us-east-2--aws-qe-quota-slice-3
-  - us-east-2--aws-qe-quota-slice-4
+  - us-east-1--aws-qe-quota-slice-20
+  - us-east-1--aws-qe-quota-slice-21
+  - us-east-1--aws-qe-quota-slice-22
+  - us-east-1--aws-qe-quota-slice-23
+  - us-east-1--aws-qe-quota-slice-24
   state: free
   type: aws-qe-quota-slice
 - names:
@@ -897,16 +937,16 @@ resources:
   state: free
   type: azure4-quota-slice
 - names:
+  - usgovtexas--azuremag-qe-quota-slice-0
+  - usgovtexas--azuremag-qe-quota-slice-1
+  - usgovtexas--azuremag-qe-quota-slice-2
+  - usgovtexas--azuremag-qe-quota-slice-3
+  - usgovtexas--azuremag-qe-quota-slice-4
   - usgovvirginia--azuremag-qe-quota-slice-0
   - usgovvirginia--azuremag-qe-quota-slice-1
   - usgovvirginia--azuremag-qe-quota-slice-2
   - usgovvirginia--azuremag-qe-quota-slice-3
   - usgovvirginia--azuremag-qe-quota-slice-4
-  - usgovvirginia--azuremag-qe-quota-slice-5
-  - usgovvirginia--azuremag-qe-quota-slice-6
-  - usgovvirginia--azuremag-qe-quota-slice-7
-  - usgovvirginia--azuremag-qe-quota-slice-8
-  - usgovvirginia--azuremag-qe-quota-slice-9
   state: free
   type: azuremag-qe-quota-slice
 - names:
@@ -931,8 +971,8 @@ resources:
   min-count: 40
   state: free
   type: equinix-ocp-metal-qe-quota-slice
-- max-count: 40
-  min-count: 40
+- max-count: 50
+  min-count: 50
   state: free
   type: equinix-ocp-metal-quota-slice
 - names:
@@ -1177,10 +1217,22 @@ resources:
   min-count: 80
   state: free
   type: hypershift-hive-quota-slice
-- max-count: 15
-  min-count: 15
+- max-count: 30
+  min-count: 30
   state: free
   type: hypershift-quota-slice
+- names:
+  - jp-osa--ibmcloud-multi-ppc64le-quota-slice-0
+  - jp-osa--ibmcloud-multi-ppc64le-quota-slice-1
+  - jp-osa--ibmcloud-multi-ppc64le-quota-slice-2
+  state: free
+  type: ibmcloud-multi-ppc64le-quota-slice
+- names:
+  - ca-tor--ibmcloud-multi-s390x-quota-slice-0
+  - ca-tor--ibmcloud-multi-s390x-quota-slice-1
+  - ca-tor--ibmcloud-multi-s390x-quota-slice-2
+  state: free
+  type: ibmcloud-multi-s390x-quota-slice
 - names:
   - jp-tok--ibmcloud-qe-quota-slice-0
   - jp-tok--ibmcloud-qe-quota-slice-1
@@ -1252,6 +1304,10 @@ resources:
   - nutanix-segment-02
   state: free
   type: nutanix-quota-slice
+- max-count: 50
+  min-count: 50
+  state: free
+  type: oci-edge-quota-slice
 - max-count: 5
   min-count: 5
   state: free
@@ -1364,18 +1420,31 @@ resources:
   state: free
   type: vsphere-clusterbot-quota-slice
 - names:
-  - ci-segment-55
+  - devqe-segment-223
+  - devqe-segment-224
+  - devqe-segment-225
+  - devqe-segment-226
+  - devqe-segment-227
+  - devqe-segment-228
   state: free
   type: vsphere-connected-quota-slice
 - names:
+  - devqe-segment-230-disconnected
+  - devqe-segment-231-disconnected
+  - devqe-segment-232-disconnected
+  - devqe-segment-233-disconnected
+  - devqe-segment-234-disconnected
+  state: free
+  type: vsphere-dis-quota-slice
+- names:
   - qe-discon-segment-60
   - qe-discon-segment-61
+  - qe-discon-segment-62
+  - qe-discon-segment-63
   state: free
   type: vsphere-discon-quota-slice
-- names:
-  - ci-segment-109
-  - ci-segment-110
-  - ci-segment-111
+- max-count: 5
+  min-count: 5
   state: free
   type: vsphere-ibm-7-quota-slice
 - names:
@@ -1402,6 +1471,18 @@ resources:
   - ci-segment-103
   - ci-segment-104
   - ci-segment-105
+  - ci-segment-106
+  - ci-segment-107
+  - ci-segment-108
+  - ci-segment-130
+  - ci-segment-131
+  - ci-segment-132
+  - ci-segment-134
+  - ci-segment-135
+  - ci-segment-136
+  - ci-segment-137
+  - ci-segment-138
+  - ci-segment-139
   - ci-segment-89
   - ci-segment-90
   - ci-segment-91

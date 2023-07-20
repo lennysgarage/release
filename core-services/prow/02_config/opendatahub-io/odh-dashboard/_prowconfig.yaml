@@ -1,8 +1,11 @@
 tide:
   merge_method:
-    opendatahub-io/odh-dashboard: squash
+    opendatahub-io/odh-dashboard: merge
   queries:
-  - labels:
+  - includedBranches:
+    - incubation
+    - main
+    labels:
     - approved
     - lgtm
     missingLabels:

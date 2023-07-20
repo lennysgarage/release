@@ -15,7 +15,7 @@ releases:
   latest:
     release:
       channel: fast
-      version: "4.12"
+      version: "4.13"
 resources:
   '*':
     limits:
@@ -33,6 +33,11 @@ tests:
     name: hac-dev-codecov-token
 - as: pact
   optional: true
+  steps:
+    test:
+    - ref: openshift-hac-dev-pact
+- as: pact-main
+  postsubmit: true
   steps:
     test:
     - ref: openshift-hac-dev-pact
